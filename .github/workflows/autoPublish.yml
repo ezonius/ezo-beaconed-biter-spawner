@@ -1,0 +1,25 @@
+name: Auto publish
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1
+      - name: Validate secrets
+        run: |
+          if [[ -z "${{ secrets.FACTORIO_MOD_API_KEY }}" ]]; then
+            echo "Error: Secret 'FACTORIO_MOD_API_KEY' is not set."
+            exit 1
+          fi
+      # Step 2
+      - uses: actions/checkout@v4
+      - name: Publish mod
+        uses: Penguin-Spy/factorio-mod-portal-publish@main
+        with:
+          factorio-api-key: ${{ secrets.FACTORIO_MOD_API_KEY }}
