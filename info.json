@@ -1,7 +1,7 @@
 {
   "name": "ezo-beaconed-biter-spawner",
   "version": "1.0.2",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "title": "Beaconed Biter Spawner",
   "author": "ezonius",
   "description": "Allows beacons to affect Captured Biter Spawners, and option to add module slots to Captured Biter Spawners",
