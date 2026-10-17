@@ -14,7 +14,7 @@
 # All fields are OPTIONAL. Top-level `version` is only written by the action's
 # `auto-update-version` option; keep it in sync with info.json manually if edited.
 
-version: 1.0.2
+version: 1.0.3
 mod_info:
   # Human-readable mod title shown on the mod portal (max 500 chars).
   # Keep in sync with info.json `title` — new-mod.nu updates both when generating.
