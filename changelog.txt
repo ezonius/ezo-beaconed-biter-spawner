@@ -1,4 +1,10 @@
 ﻿---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 2026-10-17
+  Changes:
+    - Beacons can now affect the Captured Biter Spawner: individual toggles for speed, productivity, quality, pollution and consumption effects.
+    - Optional module slots (0-1000) can be added to the Captured Biter Spawner; allowed module categories match the enabled effects.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2024-12-26
   Changes:
